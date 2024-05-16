@@ -21,3 +21,4 @@ Follow these steps to set up an Initia node on your Ubuntu system:
 - https://docs.initia.xyz/run-initia-node/running-initia-node
 - https://github.com/initia-labs/networks/tree/main/initiation-1
 - https://initia-xyz.notion.site/The-Initiation-Validator-Tasks-6d88ab0034644473907435662f9285b3
+- https://github.com/dante4rt/Ramanode-Guides/blob/main/Initia
