@@ -24,11 +24,11 @@ or you can run
 
 If "initiad command not found", do this:
 
-echo 'export PATH=$PATH:$(go env GOPATH)/bin' >> ~/.bashrc && source ~/.bashrc
+- echo 'export PATH=$PATH:$(go env GOPATH)/bin' >> ~/.bashrc && source ~/.bashrc
 
 To check node status (if "catching_up": true, just wait until it false):
 
-initiad status | jq
+- initiad status | jq
 
 ## Official Docs
 - https://docs.initia.xyz/run-initia-node/running-initia-node
