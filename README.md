@@ -23,9 +23,11 @@ or you can run
 3. sudo journalctl -fu initiad -o cat
 
 If "initiad command not found", do this:
+
 echo 'export PATH=$PATH:$(go env GOPATH)/bin' >> ~/.bashrc && source ~/.bashrc
 
 To check node status (if "catching_up": true, just wait until it false):
+
 initiad status | jq
 
 ## Official Docs
