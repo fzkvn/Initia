@@ -10,10 +10,10 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install clang pkg-config libssl-dev curl git wget htop tmux build-essential jq make lz4 gcc unzip -y
 
 if ! command -v go &> /dev/null || [[ $(go version | awk '{print $3}' | cut -d. -f2) -lt 19 ]]; then
-    echo "Go version 1.19 or above is required. Installing the latest version..."
+    echo "Go version 1.22 or above is required. Installing the latest version..."
     cd $HOME
     sudo rm -rf /usr/local/go
-    curl -Ls https://go.dev/dl/go1.21.7.linux-amd64.tar.gz | sudo tar -xzf - -C /usr/local
+    curl -Ls https://go.dev/dl/go1.22.0.linux-amd64.tar.gz | sudo tar -xzf - -C /usr/local
     echo 'export PATH=$PATH:/usr/local/go/bin' | sudo tee /etc/profile.d/golang.sh
     echo 'export PATH=$PATH:$HOME/go/bin' | tee -a $HOME/.profile
     source /etc/profile.d/golang.sh
